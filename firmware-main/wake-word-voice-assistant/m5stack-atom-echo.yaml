@@ -1,0 +1,1 @@
+<<: !include ../voice-assistant/m5stack-atom-echo.yaml
