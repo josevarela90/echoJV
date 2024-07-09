@@ -282,17 +282,6 @@ switch:
     on_turn_off:
       - script.execute: reset_led
   - platform: template
-    name: Activa Voz
-    id: activa_voz
-    optimistic: true
-    restore_mode: RESTORE_DEFAULT_ON
-    entity_category: config
-    on_turn_on:
-      - script.execute: reset_led
-      - voice_assistant.start_continuous:
-    on_turn_off:
-      - script.execute: reset_led
-  - platform: template
     id: timer_ringing
     optimistic: true
     internal: true
