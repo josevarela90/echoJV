@@ -282,6 +282,14 @@ switch:
     on_turn_off:
       - script.execute: reset_led
   - platform: template
+    name: Active
+    id: active
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+    entity_category: config
+    on_turn_on:
+      - voice_assistant.start_continuous:
+  - platform: template
     id: timer_ringing
     optimistic: true
     internal: true
